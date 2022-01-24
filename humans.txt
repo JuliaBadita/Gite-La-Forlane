@@ -7,8 +7,8 @@
 
 # THANKS
 
-    < >  <  >
+    <www.gites-de-france.com>  <  >
 # TECHNOLOGY COLOPHON
 
-    CSS3, HTML5 Normalize.css SASS
+    CSS3 HTML5 Normalize.css SASS
 
