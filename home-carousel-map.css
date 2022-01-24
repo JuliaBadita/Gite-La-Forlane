@@ -159,3 +159,18 @@
     margin: 2% auto;
     border-radius: 0.2em;
 }
+
+.home_map-paragraph {
+  margin: 0 auto;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+}
+
+.home_map-paragraph-bold {
+  font-weight:700;
+  text-decoration: underline;
+}
+
+.home_map-paragraph-span {
+  color: #964646;
+}
