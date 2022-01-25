@@ -1,0 +1,34 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Josefin+Sans:wght@100&display=swap');
+
+/* Couleur du background de la navbar */
+.navbar {
+    font-family: 'Italiana', serif;
+    border-radius: 2em;
+    font-family: 'Josefin Sans', sans-serif;
+    justify-content: center;
+    display: flex;
+    background-color: rgb(99, 54, 54);
+    overflow: hidden;
+  }
+  
+  /* Couleur des liens à l'intérieur de la barre de nav */
+  .navbar a {
+    color: #ffffff;
+    padding: 30px 16px;
+    text-decoration: none;
+    font-size: 13x;
+  }
+  
+  /* Couleur des liens avec le curseur passé dessus */
+  .navbar a:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+  }
+  
+  /* Couleur du lien (la page sur laquelle le visiteur se trouve) */
+  .navbar a.active {
+    background-color: #cfc85f;
+    color: rgb(0, 0, 0);
+  }
