@@ -1,0 +1,263 @@
+/* code partie presentation */
+
+.wrapper_general {
+    margin: 0 auto;
+    padding: 0px;
+    padding-bottom: 15px;
+    width: 90%;
+    font-family: 'Joselin Sans' Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .flex_general {
+    display: stretch;
+    flex-wrap: auto;
+    margin: 0 -30px;
+  }
+  
+  .flex_general li {
+    flex: 1 1 400px;
+    margin: -10px;
+    list-style: none;
+  }
+
+  .articles_general {
+    font-family: 'Joselin Sans';
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+
+.articles_general li {
+  color: #000;
+  flex: 1 1 200px;
+}
+
+.forlane_plan {
+    max-width: 40%;
+}
+
+/* partie capacite */
+li, ol, ul {
+    list-style: none;
+    list-style-position: initial;
+    list-style-image: initial;
+    list-style-type: none;
+}
+
+.capacity-picto {
+    max-width: 75%;
+    object-position: 0;
+}
+.no-pets svg {
+    width: 1.75rem;
+    height: 1.3125rem;
+    fill: #ff5f32;
+}
+
+:not(svg) {
+    transform-origin: 0px 0px;
+}
+
+.capacity {
+    font-family: 'Josefin Sans';
+    font-size: 21px;
+    list-style: none;
+    display: flex;
+    align-content: space-between;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+.capacity-title {
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 0.575rem;
+}
+
+.people {
+  font-family: 'Josefin Sans';
+    font-size: 21px;
+  width: 150px;
+  text-align: center;
+}
+.capacity-room {
+  font-family: 'Josefin Sans';
+    font-size: 21px;
+  width: 150px;
+  text-align: center;
+}
+.capacity-surface {
+  font-family: 'Josefin Sans';
+    font-size: 21px;
+  width: 120px;
+  text-align: center;
+}
+.capacity-wifi {
+  width: 120px;
+  text-align: center;
+  max-width: 40%;
+}
+.no-pets {
+  width: 120px;
+  text-align: center;
+  max-width: 40%;
+}
+
+
+.capacity-value {
+    font-size: 1.0625rem;
+}
+
+/* code partie FLEX */
+
+.wrapper {
+    margin: 0 auto;
+    padding: 20px;
+    width: 90%;
+    font-family: 'Joselin Sans' Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+  }
+  
+.wrapper--title {
+    font-family: 'Joselin Sans';
+    font-size: 28px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.wrapper--title-sub {
+    font-family: 'Joselin Sans' Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+
+/* code partie commune GRID & FLEX */
+
+img, video {
+    max-width: 100%;
+    /*vertical-align: middle;*/
+    justify-items: center;
+    text-align: center;
+  }
+
+  .grid_cards--title{
+      font-family: 'Josefin Sans';
+      text-align: center;
+      
+  }
+
+  a:active {
+      text-decoration: none;
+      color: #fff;
+  }
+
+  a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+  .grid_cards--title2{
+    font-family: 'Josefin Sans';
+    text-align: center;
+    background-color: #222222;
+}
+
+  .cards {
+    font-family: 'Joselin Sans';
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .cards img {
+      max-width: 100%;
+  }
+
+  .cards img center {
+    max-width: 100%;
+    text-align: center;
+}
+
+  .cards li {
+    border: 2px solid #999999;
+    border-radius:2px;
+    background-color: #999999;
+    color: #fff;
+    flex: 1 1 200px;
+  }
+  
+  .cards h2 {
+    /*background-color: rgb(168, 168, 168, 0.5);*/
+    font-size: 21px;
+    text-align: center;
+    margin: -2px;
+    padding: 10px;
+  }
+  
+  .cards p {
+    padding: 0px 10px 0px 10px;
+  }
+  
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+  }
+  
+  .flex li {
+    flex: 1 1 200px;
+    margin: 10px;
+  }
+  
+  /* partie GRID */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*grid-template-columns: repeat(auto-fill, minmax(200px 1fr));*/
+    grid-gap: 20px;
+  }
+
+  /* BOUTONS ========================================================*/
+  .button-savoirplus {
+      text-align: center;
+      margin: 10px;
+  }
+
+  /* BOUTON FIN 1 - bouton liseré blanc, texte majuscule blanc */
+.button-savoirplus {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+	border: 2px #cfbb49 solid;
+    background-color: #cfbb49;
+	padding: 8px 20px;
+	border-radius: 30px;
+	color: #fff;
+	text-decoration: none;
+}
+.button-savoirplus a:active {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+	border: 2px #cfbb49 solid;
+	padding: 8px 20px;
+	border-radius: 30px;
+	color: #fff;
+	text-decoration: none;
+    list-style: none;
+}
+/* effet survol */
+.button-savoirplus:hover {
+	border: 2px #FFFFFF solid;
+	padding: 8px 20px;
+	border-radius: 30px;
+	background-color: #cfbb49;
+	color: #2d2d35;
+	text-decoration: none;
+}
+
+/*fin BOUTON FIN 1 */
