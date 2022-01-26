@@ -1,12 +1,12 @@
 /* Home carousel */
 
-.home_carousel-container{
+.home__carousel-container{
     height:400px;
     position:relative;
     width:800px;
     margin:0 auto;
   }
-  .home_carousel-container:after {
+  .home__carousel-container:after {
     content: "";
     position: absolute;
     display: block;
@@ -17,7 +17,7 @@
     background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.6) 100%) repeat 0 0;
     z-index: 1;
     }
-  .home_carousel-item{
+  .home__carousel-item{
     position:absolute;
     top: 0;
     bottom:0;
@@ -30,21 +30,21 @@
 
   /* Home carousel arrows */
 
-  .home_carousel-arrow{
+  .home__carousel-arrow{
     border: solid black;
       border-width: 0 3px 3px 0;
       display: inline-block;
       padding: 12px;
   }
   
-  .home_carousel-arrow-prev{
+  .home__carousel-arrow-prev{
     left:-30px;
     position:absolute;
     top:50%;
     transform:translateY(-50%) rotate(135deg);
   }
    
-  .home_carousel-arrow-next{
+  .home__carousel-arrow-next{
     right:-30px;
     position:absolute;
     top:50%;
@@ -52,7 +52,7 @@
     }
   
   @media (max-width: 480px) {
-        .home_carousel-arrow {
+        .home__carousel-arrow {
           background-size: 10px;
           background-position: 10px 50%;
         }
@@ -67,54 +67,54 @@
   
   /* Home carousel items */  
 
-  .home_carousel-item-1 {
+  .home__carousel-item-1 {
       z-index: 2;
       opacity: 1;
     background:url('img/gite-img.jpg');
     background-size: cover;
     }
-  .home_carousel-item-2{
+  .home__carousel-item-2{
     background:url('img/jardin.jpg');
      background-size: cover;
   }
-  .home_carousel-item-3{
+  .home__carousel-item-3{
     background:url('img/salle-a-manger.jpg');
      background-size: cover;
   }
-  .home_carousel-item-4{
+  .home__carousel-item-4{
     background:url('img/salon.jpg');
      background-size: cover;
   }
-  .home_carousel-item-5{
+  .home__carousel-item-5{
     background:url('img/terrasse.jpg');
      background-size: cover;
   }
   
-  *:target ~ .home_carousel-item-1 {
+  *:target ~ .home__carousel-item-1 {
       opacity: 0;
     }
   
-  #home_carousel-item-1:target ~ .home_carousel-item-1 {
+  #home__carousel-item-1:target ~ .home__carousel-item-1 {
       opacity: 1;
     }
   
-  #home_carousel-item-2:target ~ .home_carousel-item-2, #home_carousel-item-3:target ~ .home_carousel-item-3, #home_carousel-item-4:target ~ .home_carousel-item-4 {
+  #home__carousel-item-2:target ~ .home__carousel-item-2, #home__carousel-item-3:target ~ .home__carousel-item-3, #home__carousel-item-4:target ~ .home__carousel-item-4 {
       z-index: 3;
       opacity: 1;
     }
 
-  #home_carousel-item-5:target ~ .home_carousel-item-5 {
+  #home__carousel-item-5:target ~ .home__carousel-item-5 {
       z-index: 3;
       opacity: 1;  
   }
 
   /* Home Carousel Button */
 
-  .home_carousel-button-container {
+  .home__carousel-button-container {
       text-align: center;
       margin-top: 37%;
   }
-  .home_carousel-button {
+  .home__carousel-button {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
@@ -128,7 +128,7 @@
 }
 
 
-.home_carousel-button:hover {
+.home__carousel-button:hover {
 	border: 2px #cfbb49 solid;
     background-color: #cfbb49;
 	padding: 10px 40px;
@@ -139,7 +139,7 @@
 }
 
 
-.home_article-h2 {
+.home__article-h2 {
     font-size: 1.7em;
     color: #6e0909;
     text-shadow: 2px 1.5px #fdeab2;
@@ -150,7 +150,7 @@
 
 /* Home map */
 
-.home_map {
+.home__map {
     display: flex;
     justify-self: center;
     height: 300px;
@@ -160,17 +160,17 @@
     border-radius: 0.2em;
 }
 
-.home_map-paragraph {
+.home__map-paragraph {
   margin: 0 auto;
   margin-left: 1.5%;
   margin-right: 1.5%;
 }
 
-.home_map-paragraph-bold {
+.home__map-paragraph-bold {
   font-weight:700;
   text-decoration: underline;
 }
 
-.home_map-paragraph-span {
+.home__map-paragraph-span {
   color: #964646;
 }
