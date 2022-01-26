@@ -1,0 +1,76 @@
+.container-avis {
+    display: flex;
+    padding: 20px 40px 20px 40px;
+    gap: 50px;
+  }
+  
+  .section-avis {
+    flex: 1; /*grow*/
+    /*
+    border: 2px solid rgb(168, 168, 168, 0.5);*/
+    background-color: rgb(255, 245, 232);
+    /*background-color: rgb(255, 246, 240);*/
+    padding: 20px;
+    border-radius: 4px;
+  }
+
+  .section-avis-two {
+    flex: 1; /*grow*/
+    
+    border: 2px solid rgb(168, 168, 168, 0.4);
+    /*background-color: rgb(255, 246, 240);*/
+    padding: 20px;
+    border-radius: 4px;
+  }
+
+  .avatar-title {
+      font-family: 'Josefin Sans';
+      font-size: 21px;
+      margin: 7px;
+  }
+  .avatar-star {
+      color: #cfbb49;
+      font-size: x-large;
+      margin: 0;
+      padding: 0;
+  }
+
+  .avatar-name {
+      font-family: 'Josefin Sans';
+      font-size: 18px;
+      margin: 0;
+  }
+  .avatar-avis {
+      text-align: left;
+      /* evite les coupures de mots */
+      text-justify: newspaper;
+      font-family: 'Josefin Sans';
+      color: #333333;
+      font-size: 15px;
+  }
+
+  .avatar-avis-date {
+    text-align: center;
+    text-justify: auto;
+    color: #333333;
+    font-family: 'Josefin Sans';
+    font-size: 14px;
+}
+
+  .avatar-img {
+    background: #cfbb49;
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+  .title-avis {
+      text-align: center;
+  }
+  
+  @media (max-width: 768px) { /*breakpoint*/
+    .container-avis {
+      flex-direction: column;
+    }
+  }
