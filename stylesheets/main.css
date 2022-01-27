@@ -471,6 +471,19 @@ header {
   text-align: left;
 }
 
+.header-span-title {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: medium;
+  font-weight: bolder;
+  text-decoration: underline;
+  color: #cfc85f;
+}
+
+.header-span {
+  font-size: medium;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
 .header-logo {
   position: absolute;
   top: 50%;
@@ -478,6 +491,7 @@ header {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   color: aliceblue;
+  text-decoration: overline;
 }
 
 .header-contact {
@@ -506,7 +520,6 @@ header {
    ============================================================================ */
 /* Couleur du background de la navbar */
 .navbar {
-  font-family: 'Italiana', serif;
   font-family: 'Josefin Sans', sans-serif;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -583,7 +596,7 @@ header {
 /* Home Carousel Button */
 .home__carousel-button-container {
   text-align: center;
-  margin-top: 37%;
+  margin-top: 35%;
 }
 
 .home__carousel-button {
@@ -729,9 +742,9 @@ carousel
 
 /* Home Carousel h2 */
 .home__carousel-h2 {
-  font-size: 1.7em;
+  font-size: 1.75em;
   font-weight: bolder;
-  color: #6e0909;
+  color: #633636;
   text-shadow: 2px 1.5px #fdeab2;
   text-align: center;
   margin-top: 5%;

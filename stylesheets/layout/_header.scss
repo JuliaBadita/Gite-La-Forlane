@@ -26,13 +26,27 @@ header {
     padding: 45px 0px 0px 15px;
     text-align: left;
   }
+
+  .header-span-title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: medium;
+    font-weight: bolder;
+    text-decoration: underline;
+    color: $yellow-general;
+  }
   
+  .header-span {
+    font-size: medium;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
   .header-logo {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: aliceblue;
+    text-decoration: overline;
   }
   
   
