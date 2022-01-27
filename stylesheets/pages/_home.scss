@@ -1,3 +1,60 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+
+/* Home Carousel h2 */
+ 
+.home__carousel-h2 {
+    font-size: 1.7em;
+    font-weight: bolder;
+    color: #6e0909;
+    text-shadow: 2px 1.5px #fdeab2;
+    text-align: center;
+    margin-top: 5%;
+}  
+
+/* Home map */
+
+.home__map {
+    border: 0;
+    margin: 2% auto;
+    border-radius: 0.2em;
+}
+
+.home__map-paragraph {
+  margin: 0 auto;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.home__map-paragraph-bold {
+  font-weight:700;
+  text-decoration: underline;
+}
+
+.home__map-paragraph-span {
+  color: #964646;
+}
+
+
+.principale_map {
+    padding: 10px 30px 30px 30px;
+    
+    background-color: #c3c3c3; 
+    iframe{
+        min-height: 350px;
+        height:100%;
+        width:100%;
+        }
+    }
+    
+    img {
+      text-align: center;
+    }
+    
+    .iframe {
+        height:100%;
+        width:100%;
+    }
+    
+    

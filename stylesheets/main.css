@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -5,6 +6,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Josefin+Sans:wght@100&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -442,13 +444,332 @@ body {
   width: 1px;
 }
 
+/* Header image */
+header {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: #633636;
+  overflow: hidden;
+  max-width: 100%;
+  position: relative;
+}
+
+.overlay {
+  width: 100%;
+  height: 45vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.4;
+}
+
+.header-adress {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  padding: 45px 0px 0px 15px;
+  text-align: left;
+}
+
+.header-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: aliceblue;
+}
+
+.header-contact {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  padding: 45px 0px 0px 15px;
+  text-align: right;
+}
+
+.header-span {
+  color: white;
+}
+
 /* ============================================================================
     grid
      ============================================================================ */
 /* ============================================================================
   navbar
    ============================================================================ */
+/* Couleur du background de la navbar */
+.navbar {
+  font-family: 'Italiana', serif;
+  font-family: 'Josefin Sans', sans-serif;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #633636;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+}
+
+/* Couleur des liens à l'intérieur de la barre de nav */
+.navbar a {
+  color: #ffffff;
+  padding: 30px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Couleur des liens avec le curseur passé dessus */
+.navbar a:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Couleur du lien (la page sur laquelle le visiteur se trouve) */
+.navbar a.active {
+  background-color: #cfc85f;
+  color: black;
+}
+
+/* ============================================================================
+  Arrow Back to Top
+   ============================================================================ */
+/*Arrow Back To Top */
+#return-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #913232;
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#return-to-top i {
+  color: #cfc85f;
+  margin: 0;
+  position: relative;
+  left: 17px;
+  top: 5px;
+  font-size: 27px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#return-to-top:hover {
+  background: #cfc85f;
+}
+
+#return-to-top:hover i {
+  color: #9b2f2f;
+}
+
+/* Home Carousel Button */
+.home__carousel-button-container {
+  text-align: center;
+  margin-top: 37%;
+}
+
+.home__carousel-button {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 2px #cfbb49 solid;
+  background-color: #cfbb49;
+  padding: 8px 30px;
+  border-radius: 30px;
+  color: #4f0909;
+  text-decoration: none;
+}
+
+.home__carousel-button:hover {
+  border: 2px #cfbb49 solid;
+  background-color: #cfbb49;
+  padding: 10px 40px;
+  border-radius: 40px;
+  font-weight: 700;
+  color: #f7f4f4;
+  text-decoration: none;
+}
+
 /*==========================================================================================
 carousel 
 ===========================================================================================*/
+/* Home carousel */
+.home__carousel-container {
+  height: 400px;
+  position: relative;
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.home__carousel-container:after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.6) 100%) repeat 0 0;
+  z-index: 1;
+}
+
+.home__carousel-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 50px;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Home carousel arrows */
+.home__carousel-arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 12px;
+}
+
+.home__carousel-arrow-prev {
+  left: -30px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(135deg);
+          transform: translateY(-50%) rotate(135deg);
+}
+
+.home__carousel-arrow-next {
+  right: -30px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+          transform: translateY(-50%) rotate(-45deg);
+}
+
+@media (max-width: 480px) {
+  .home__carousel-arrow {
+    background-size: 10px;
+    background-position: 10px 50%;
+  }
+}
+
+/*Select every element*/
+[id^="item"] {
+  display: none;
+}
+
+/* Home carousel items */
+.home__carousel-item-1 {
+  z-index: 2;
+  opacity: 1;
+  background: url("/img/gite-img.jpg");
+  background-size: cover;
+}
+
+.home__carousel-item-2 {
+  background: url("/img/jardin.jpg");
+  background-size: cover;
+}
+
+.home__carousel-item-3 {
+  background: url("/img/salon.jpg");
+  background-size: cover;
+}
+
+.home__carousel-item-4 {
+  background: url("/img/salle-a-manger.jpg");
+  background-size: cover;
+}
+
+.home__carousel-item-5 {
+  background: url("/img/terrasse.jpg");
+  background-size: cover;
+}
+
+*:target ~ .home__carousel-item-1 {
+  opacity: 0;
+}
+
+#home__carousel-item-1:target ~ .home__carousel-item-1 {
+  opacity: 1;
+}
+
+#home__carousel-item-2:target ~ .home__carousel-item-2, #home__carousel-item-3:target ~ .home__carousel-item-3, #home__carousel-item-4:target ~ .home__carousel-item-4 {
+  z-index: 3;
+  opacity: 1;
+}
+
+#home__carousel-item-5:target ~ .home__carousel-item-5 {
+  z-index: 3;
+  opacity: 1;
+}
+
+/* Home Carousel h2 */
+.home__carousel-h2 {
+  font-size: 1.7em;
+  font-weight: bolder;
+  color: #6e0909;
+  text-shadow: 2px 1.5px #fdeab2;
+  text-align: center;
+  margin-top: 5%;
+}
+
+/* Home map */
+.home__map {
+  border: 0;
+  margin: 2% auto;
+  border-radius: 0.2em;
+}
+
+.home__map-paragraph {
+  margin: 0 auto;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.home__map-paragraph-bold {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.home__map-paragraph-span {
+  color: #964646;
+}
+
+.principale_map {
+  padding: 10px 30px 30px 30px;
+  background-color: #c3c3c3;
+}
+
+.principale_map iframe {
+  min-height: 350px;
+  height: 100%;
+  width: 100%;
+}
+
+img {
+  text-align: center;
+}
+
+.iframe {
+  height: 100%;
+  width: 100%;
+}
 /*# sourceMappingURL=main.css.map */

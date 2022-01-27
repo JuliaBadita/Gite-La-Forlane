@@ -1,3 +1,118 @@
 /*==========================================================================================
 carousel 
 ===========================================================================================*/
+
+/* Home carousel */
+
+.home__carousel-container{
+    height:400px;
+    position:relative;
+    width:800px;
+    margin:0 auto;
+    margin-top: 5%;
+  }
+
+  .home__carousel-container:after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.6) 100%) repeat 0 0;
+    z-index: 1;
+    }
+  .home__carousel-item{
+    position:absolute;
+    top: 0;
+    bottom:0;
+    left:0;
+    right:0;
+    padding:25px 50px;
+    opacity:0;
+    transition: all 0.5s ease-in-out;
+  }
+
+  /* Home carousel arrows */
+
+  .home__carousel-arrow{
+    border: solid black;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 12px;
+  }
+  
+  .home__carousel-arrow-prev{
+    left:-30px;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%) rotate(135deg);
+  }
+   
+  .home__carousel-arrow-next{
+    right:-30px;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%) rotate(-45deg);
+    }
+  
+  @media (max-width: 480px) {
+        .home__carousel-arrow {
+          background-size: 10px;
+          background-position: 10px 50%;
+        }
+      }
+ 
+  
+  /*Select every element*/
+
+  [id^="item"] {
+      display: none;
+    }
+  
+  /* Home carousel items */  
+
+  .home__carousel-item-1 {
+      z-index: 2;
+      opacity: 1;
+    background:url('/img/gite-img.jpg');
+    background-size: cover;
+    }
+  .home__carousel-item-2{
+    background:url('/img/jardin.jpg');
+     background-size: cover;
+  }
+  .home__carousel-item-3{
+    background:url('/img/salon.jpg');
+     background-size: cover;
+  }
+  .home__carousel-item-4{
+    background:url('/img/salle-a-manger.jpg');
+     background-size: cover;
+  }
+  .home__carousel-item-5{
+    background:url('/img/terrasse.jpg');
+     background-size: cover;
+  }
+  
+  *:target ~ .home__carousel-item-1 {
+      opacity: 0;
+    }
+  
+  #home__carousel-item-1:target ~ .home__carousel-item-1 {
+      opacity: 1;
+    }
+  
+  #home__carousel-item-2:target ~ .home__carousel-item-2, #home__carousel-item-3:target ~ .home__carousel-item-3, #home__carousel-item-4:target ~ .home__carousel-item-4 {
+      z-index: 3;
+      opacity: 1;
+    }
+
+  #home__carousel-item-5:target ~ .home__carousel-item-5 {
+      z-index: 3;
+      opacity: 1;  
+  }
+
+
+  
