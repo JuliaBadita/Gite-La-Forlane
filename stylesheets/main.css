@@ -488,8 +488,14 @@ header {
   text-align: right;
 }
 
-.header-span {
+.header-contact a {
   color: white;
+}
+
+.header-contact a:hover {
+  color: #cfc85f;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 /* ============================================================================
@@ -543,7 +549,7 @@ header {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #913232;
+  background: #633636;
   width: 50px;
   height: 50px;
   display: block;
@@ -571,7 +577,7 @@ header {
 }
 
 #return-to-top:hover i {
-  color: #9b2f2f;
+  color: #633636;
 }
 
 /* Home Carousel Button */
@@ -750,7 +756,7 @@ carousel
 }
 
 .home__map-paragraph-span {
-  color: #964646;
+  color: #633636;
 }
 
 .principale_map {

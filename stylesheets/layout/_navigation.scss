@@ -8,7 +8,7 @@
     font-family: 'Josefin Sans', sans-serif;
     justify-content: center;
     display: flex;
-    background-color: rgb(99, 54, 54);
+    background-color: $bordeaux-general;
     overflow: hidden;
     object-fit: cover;
     max-width: 100%;
@@ -24,12 +24,12 @@
   
   /* Couleur des liens avec le curseur passé dessus */
   .navbar a:hover {
-    background-color: rgb(0, 0, 0);
+    background-color: $black-general;
     color: rgb(255, 255, 255);
   }
   
   /* Couleur du lien (la page sur laquelle le visiteur se trouve) */
   .navbar a.active {
-    background-color: #cfc85f;
-    color: rgb(0, 0, 0);
+    background-color: $yellow-general;
+    color: $black-general;
   }
