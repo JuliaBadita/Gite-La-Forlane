@@ -48,6 +48,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto:wght@900&family=Source+Serif+Pro:wght@200&display=swap" rel="stylesheet">
  
+
    <!-- source code d'origine remanié https://la-cascade.io/utiliser-grid-ou-flexbox/ -->
  
    <meta name="theme-color" content="#fafafa">
@@ -63,7 +64,7 @@
     <header>
       <img src="img/gite-header.jpg" class="overlay" alt="Image illustrant le gite La Forlane pour la barre de navigation">
      
-    <!--  <article class="header-adress">
+      <article class="header-adress">
         <p><span class="header-span-adress">Adresse</span><br>
           <span class="header-span-road">7 rue Bernard Buffet</span><br>Hameau St Crépin<br>
           <span class="header-span-city">27480 Lorleau</span></p>
@@ -77,7 +78,7 @@
         <p><span class="header-span-contact">Contact</span><br>
           <span class="header-span-tel"><a href="tel:+33603499244">06 03 49 92 44</a></span><br>
           <span class="header-span-mail"><a href="mailto:gite.laforlane@gmail.com">gite.laforlane@gmail.com</a></span></p>
-      </article>     -->    
+      </article>     
     </header> 
   
   <!-- Navbar -->
@@ -95,6 +96,7 @@
   <!-- fin NAVBAR --> 
 
   <main>
+
       <!-- carrousel -->
       <!--Home Carousel-->
 
@@ -370,13 +372,35 @@
     </article>
   </section>
   <p class="footer-bottom-text">2022 - La Forlane Gîte Normand à Lorleau (Eure) | <a href="page-mentionslegales.html" alt="Mentions-Legales" title="Mentions-Legales">Mentions légales</a> | &copy;Team Julia</p>
+
 </footer>
 <!-- fin FOOTER --> 
+
+<!-- Arrow Back To Top -->
+<a href="javascript:" id="return-to-top"><i class="icon-chevron-up">&#129045;</i></a>
 
 <!-- fin code -->
 <script src="js/vendor/modernizr-3.11.2.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
+
+<!-- Arrow Back To Top -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+// ===== Scroll to Top ==== 
+$(window).scroll(function() {
+if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+    $('#return-to-top').fadeIn(200);    // Fade in the arrow
+} else {
+    $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+}
+});
+$('#return-to-top').click(function() {      // When arrow is clicked
+$('body,html').animate({
+    scrollTop : 0                       // Scroll to top of body
+}, 500);
+});
+</script>
 
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 <script>

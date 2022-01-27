@@ -117,7 +117,8 @@ max-width: 40%;
 .principale_map {
 padding: 10px 30px 30px 30px;
 
-background-color: #c3c3c3;
+background-color: #c3c3c3; 
+}
 
 img {
   text-align: center;
@@ -128,7 +129,6 @@ img {
     width:100%;
 }
 
-}
 
 .principale_map iframe{
 min-height: 350px;

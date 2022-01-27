@@ -9,6 +9,8 @@ header {
   background: rgb(99, 54, 54);
   overflow: hidden;
   max-width: 100%;
+  position: relative;
+  text-align: center;
 }
 
 .overlay {
@@ -16,6 +18,27 @@ header {
   height: 45vh;
   object-fit: cover;
   opacity: 0.4;
+}
+
+.header-adress {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  margin: 0px 0px 0px 0px;
+  padding: 45px 0px 0px 15px;
+  height: 183px;
+  width: 389px;
+  min-height: auto;
+  min-width: auto;
+}
+
+.header-logo {
+  position: absolute;
+
+}
+
+.header-contact {
+  position: absolute;
 }
 
 /* Couleur du background de la navbar */
@@ -49,6 +72,50 @@ header {
     background-color: #cfc85f;
     color: rgb(0, 0, 0);
   }
+
+/*Arrow Back To Top */
+
+#return-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgb(145, 50, 50);
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#return-to-top i {
+  color: #cfc85f;
+  margin: 0;
+  position: relative;
+  left: 17px;
+  top: 5px;
+  font-size: 27px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#return-to-top:hover {
+  background: #cfc85f;
+}
+#return-to-top:hover i {
+  color: rgb(155, 47, 47);
+}
+
 
 
 /* Home carousel */
@@ -206,10 +273,6 @@ header {
 /* Home map */
 
 .home__map {
-    display: flex;
-    justify-self: center;
-    height: 300px;
-    width: 900px;
     border: 0;
     margin: 2% auto;
     border-radius: 0.2em;
@@ -217,8 +280,8 @@ header {
 
 .home__map-paragraph {
   margin: 0 auto;
-  margin-left: 1.5%;
-  margin-right: 1.5%;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 
 .home__map-paragraph-bold {
