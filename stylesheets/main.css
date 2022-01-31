@@ -567,6 +567,10 @@ header {
   }
 }
 
+.menu__box {
+  z-index: 0;
+}
+
 #menu__toggle {
   opacity: 0;
 }
@@ -599,7 +603,7 @@ header {
   width: 26px;
   height: 26px;
   cursor: pointer;
-  z-index: 1;
+  z-index: 2;
 }
 
 .menu__btn > span,
@@ -639,6 +643,7 @@ header {
           box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
   -webkit-transition-duration: .25s;
           transition-duration: .25s;
+  z-index: 1;
 }
 
 .menu__item {
@@ -655,6 +660,11 @@ header {
 
 .menu__item:hover {
   background-color: #CFD8DC;
+}
+
+.nav__svg {
+  height: 0.9em;
+  width: 0.9em;
 }
 
 /* ============================================================================
@@ -880,5 +890,68 @@ img {
 .iframe {
   height: 100%;
   width: 100%;
+}
+
+.broken-grid_wrap {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+
+.broken-grid_item {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.broken-grid_align-lt .broken-grid_underlay,
+.broken-grid_align-rt .broken-grid_underlay {
+  padding: 0;
+  z-index: 1;
+}
+
+.broken-grid_align-lt .broken-grid_underlay,
+.broken-grid_align-rt .broken-grid_overlay {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.broken-grid_align-rt .broken-grid_underlay,
+.broken-grid_align-lt .broken-grid_overlay {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.broken-grid_align-lt .broken-grid_overlay,
+.broken-grid_align-rt .broken-grid_overlay {
+  margin-top: -35%;
+  padding: 2rem;
+  z-index: 2;
+}
+
+.broken-grid_align-lt .broken-grid_overlay {
+  color: #343A40;
+  background-color: #94816b;
+}
+
+.broken-grid_align-rt .broken-grid_overlay {
+  color: #FFFFFF;
+  background-color: #94816b;
+}
+
+.broken-grid_align-lt .broken-grid_overlay,
+.broken-grid_align-rt .broken-grid_overlay {
+  margin-top: 0;
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991px) {
+  .broken-grid_align-lt .broken-grid_overlay,
+  .broken-grid_align-rt .broken-grid_overlay {
+    margin-top: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

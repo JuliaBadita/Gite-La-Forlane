@@ -314,17 +314,17 @@ p footer{
 
 /* reglage des colonnes et margin separation */
 .row-footer{
-  display: grid;
+  display: grid !important;
   /*grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));*/
-  grid-template-columns: repeat(4, minmax(270px, 1fr));
-  gap: 25px;
-  line-height: 20px;
-  margin: 20px;
-  padding: 0px;
+  grid-template-columns: repeat(4, minmax(270px, 1fr)) !important;
+  gap: 25px !important;
+  line-height: 20px !important;
+  margin: 20px !important;
+  padding: 0px !important;
 }
 
 .mail-input {
-    width: 171px;
+    width: 171px !important;
 }
 
 @media screen and (max-width: 900px) {

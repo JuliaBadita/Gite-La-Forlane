@@ -23,9 +23,6 @@
   
    <!-- styles dans ce doc -->
    <link rel="stylesheet" href="stylesheets/main.css">
-  
-  <!-- Flickity css for the carousel --> 
-  <link rel="stylesheet" href="https://npmcdn.com/flickity@2/dist/flickity.css">
 
    <!-- links partie gallery -->
   <link rel="stylesheet" href="labs.css">
@@ -58,7 +55,7 @@
     <!-- Header -->
 
     <header>
-      <img src="img/gite-header.jpg" class="overlay" alt="Image illustrant le gite La Forlane pour la barre de navigation">
+      <img src="img/Navbar/gite-header.jpg" class="overlay" alt="Image illustrant le gite La Forlane pour la barre de navigation">
      
       
       <article class="header-adress">
@@ -105,18 +102,44 @@
     </label>
 
     <ul class="menu__box">
-      <li><a class="menu__item" href="home-page.html">Accueil</a></li>
-			<li><a class="menu__item" href="#">Equipements</a></li>
-			<li><a class="menu__item" href="#">Galerie photos</a></li>
-			<li><a class="menu__item" href="history.html">Histoire du gîte</a></li>
-			<li><a class="menu__item" href="#">Réservation</a></li>
-      <li><a class="menu__item" href="#">Contact</a></li>
+      <li><a class="menu__item" href="home-page.html"><img src="img/Navbar/home-solid.svg" class="nav__svg"> Accueil</a></li>
+			<li><a class="menu__item" href="#"><img src="img/Navbar/tv-solid.svg" class="nav__svg"> Equipements</a></li>
+			<li><a class="menu__item" href="#"><img src="img/Navbar/image-regular.svg" class="nav__svg"> Galerie photos</a></li>
+			<li><a class="menu__item" href="history.html"><img src="img/Navbar/history-solid.svg" class="nav__svg"> Histoire du gîte</a></li>
+      <li><a class="menu__item" href="#"><img src="img/Navbar/map-marked-alt-solid.svg" class="nav__svg"> Autour du gîte</a></li>
+			<li><a class="menu__item" href="#"><img src="img/Navbar/calendar-alt-regular.svg" class="nav__svg"> Réservation</a></li>
+      <li><a class="menu__item" href="#"><img src="img/Navbar/edit-regular.svg" class="nav__svg"> Contact</a></li>
     </ul>
   </section>
 
-
-
-
+<main>
+  <section class="container">
+    <div class="row mx-0 my-5 broken-grid_wrap broken-grid_align-rt">
+      <div class="col-md-12 col-lg-7 broken-grid_item broken-grid_underlay">
+        <figure class="broken-grid_photo">
+          <img class="img-fluid" src="img/history/travaux1.jpg" alt="Image">
+        </figure>
+      </div>
+      <article class="col-md-12 col-lg-6 broken-grid_item broken-grid_overlay">
+        <h2 class="mb-3">Lorem Ipsum Dolor Sit Amet</h2>
+        <p class="my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a laoreet elit, at consequat ipsum. Quisque sollicitudin tincidunt tortor. Nunc ac eleifend neque. Praesent mollis in diam id vulputate. Donec eu quam congue metus vulputate bibendum a a dui. Nullam vitae efficitur lacus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec id dui dignissim, congue risus et, fringilla ante. Nullam in molestie nulla. Nunc a felis non sapien tristique condimentum at non libero.</p>
+      </article>
+    </div>
+    <div class="row mx-0 my-5 broken-grid_wrap broken-grid_align-lt">
+      <div class="col-md-12 col-lg-7 broken-grid_item broken-grid_underlay">
+        <figure class="broken-grid_photo">
+          <img class="img-fluid" src="img/history/travaux5.jpg" alt="Image">
+        </figure>
+      </div>
+      <article class="col-md-12 col-lg-6 broken-grid_item broken-grid_overlay">
+        <h2 class="mb-3">Lorem Ipsum Dolor Sit Amet</h2>
+        <p class="my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a laoreet elit, at consequat ipsum. Quisque sollicitudin tincidunt tortor. Nunc ac eleifend neque. Praesent mollis in diam id vulputate. Donec eu quam congue metus vulputate bibendum a a dui. Nullam vitae efficitur lacus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec id dui dignissim, congue risus et, fringilla ante. Nullam in molestie nulla. Nunc a felis non sapien tristique condimentum at non libero.</p>
+      </article>
+    </div>
+  </section>
+</main>
 
 
 
@@ -179,12 +202,10 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
   
-  <!-- Flickity JS for the carousel -->
-  
-  <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
   
   <!-- Arrow Back To Top -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
   <script>
   // ===== Scroll to Top ==== 
   $(window).scroll(function() {

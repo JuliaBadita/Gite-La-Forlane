@@ -1,0 +1,49 @@
+// Histoire du gîte - Page
+
+.broken-grid_wrap {
+    flex-direction: column;
+    align-items: left;
+  }
+  .broken-grid_item {
+    flex-shrink: 0;
+  }
+  .broken-grid_align-lt .broken-grid_underlay, 
+  .broken-grid_align-rt .broken-grid_underlay {
+    padding: 0;
+    z-index: 1;
+  }
+  .broken-grid_align-lt .broken-grid_underlay, 
+  .broken-grid_align-rt .broken-grid_overlay {
+    align-self: flex-start;
+  }
+  .broken-grid_align-rt .broken-grid_underlay, 
+  .broken-grid_align-lt .broken-grid_overlay {
+    align-self: flex-end;
+  }
+  .broken-grid_align-lt .broken-grid_overlay, 
+  .broken-grid_align-rt .broken-grid_overlay {
+    margin-top: -35%;
+    padding: 2rem;
+    z-index: 2;
+  }
+  .broken-grid_align-lt .broken-grid_overlay {
+    color: #343A40;
+    background-color: #94816b;
+  }
+  .broken-grid_align-rt .broken-grid_overlay {
+    color: #FFFFFF;
+    background-color: #94816b;
+  }
+  
+  .broken-grid_align-lt .broken-grid_overlay, 
+  .broken-grid_align-rt .broken-grid_overlay {
+    margin-top: 0;
+  }
+
+  /* Medium devices (tablets, less than 992px) */
+  @media (max-width: 991px) {
+    .broken-grid_align-lt .broken-grid_overlay, 
+    .broken-grid_align-rt .broken-grid_overlay {
+      margin-top: 0;
+    }
+  }
