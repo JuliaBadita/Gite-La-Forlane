@@ -45,7 +45,7 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: aliceblue;
+    color: $white_general;
     text-decoration: overline;
   }
   
@@ -57,11 +57,11 @@ header {
     padding: 45px 0px 0px 15px;
     text-align: right;
     a {
-      color: white;
+      color: $white_general;
       &:hover{
-        color: $yellow-general;
+        color: rgb(248, 134, 134);
         font-weight: bold;
-        text-decoration: none;
+        text-decoration: underline;
       }
     }
   }

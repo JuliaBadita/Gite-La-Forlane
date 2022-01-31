@@ -25,7 +25,7 @@ html {
  * Basic styles for links
  */
 a {
-  color: $brand-color;
+  color: $yellow-general;
   text-decoration: none;
 
   @include on-event {
@@ -33,3 +33,7 @@ a {
     text-decoration: underline;
   }
 }
+
+//body {
+//  background-color: burlywood !important;
+//}

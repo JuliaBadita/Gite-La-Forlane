@@ -368,12 +368,12 @@ html {
  * Basic styles for links
  */
 a {
-  color: #e50050;
+  color: #cfc85f;
   text-decoration: none;
 }
 
 a:hover, a:active, a:focus {
-  color: #222222;
+  color: #f88686;
   text-decoration: underline;
 }
 
@@ -381,7 +381,7 @@ a:hover, a:active, a:focus {
  * Basic typography style for copy text
  */
 body {
-  color: #222222;
+  color: #f88686;
   font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
@@ -490,7 +490,7 @@ header {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  color: aliceblue;
+  color: white;
   text-decoration: overline;
 }
 
@@ -507,9 +507,9 @@ header {
 }
 
 .header-contact a:hover {
-  color: #cfc85f;
+  color: #f88686;
   font-weight: bold;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 /* ============================================================================
@@ -851,6 +851,7 @@ body {
   margin: 0 auto;
   margin-left: 1%;
   margin-right: 1%;
+  color: black;
 }
 
 .home__map-paragraph-bold {
@@ -864,7 +865,6 @@ body {
 
 .principale_map {
   padding: 10px 30px 30px 30px;
-  background-color: #c3c3c3;
 }
 
 .principale_map iframe {
