@@ -14,30 +14,36 @@
   }
   
   /* Couleur des liens à l'intérieur de la barre de nav */
-  .navbar a {
+  .navbar {
+    a {
     color: #ffffff;
     padding: 30px 16px;
     text-decoration: none;
     font-size: 17px;
   }
+}
   
   /* Couleur des liens avec le curseur passé dessus */
-  .navbar a:hover {
+  .navbar {
+    a:hover {
     background-color: $black-general;
     color: rgb(255, 255, 255);
   }
+}
   
   /* Couleur du lien (la page sur laquelle le visiteur se trouve) */
-  .navbar a.active {
+  .navbar {
+    a.active {
     background-color: $yellow-general;
     color: $black-general;
   }
+}
 
 
   /* Responsive Hamburger Menu */
 
   @media screen and (min-width: 900px) {
-    .hamburger-menu, #menu__toggle, .menu__button, .menu__box, .menu__item {
+    .hamburger-menu, #menu__toggle, .menu__btn, .menu__box, .menu__item {
       display: none;
     }
   }
@@ -51,23 +57,22 @@
   
   #menu__toggle {
     opacity: 0;
-    position: sticky;
   }
-  #menu__toggle:checked + .menu__button > span {
+  #menu__toggle:checked + .menu__btn > span {
     transform: rotate(45deg);
   }
-  #menu__toggle:checked + .menu__button > span::before {
+  #menu__toggle:checked + .menu__btn > span::before {
     top: 0;
     transform: rotate(0deg);
   }
-  #menu__toggle:checked + .menu__button > span::after {
+  #menu__toggle:checked + .menu__btn > span::after {
     top: 0;
     transform: rotate(90deg);
   }
   #menu__toggle:checked ~ .menu__box {
     left: 0 !important;
   }
-  .menu__button {
+  .menu__btn {
     position: fixed;
     top: 20px;
     left: 20px;
@@ -76,21 +81,21 @@
     cursor: pointer;
     z-index: 1;
   }
-  .menu__button > span,
-  .menu__button > span::before,
-  .menu__button > span::after {
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
     display: block;
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: $yellow-general;
+    background-color: #616161;
     transition-duration: .25s;
   }
-  .menu__button > span::before {
+  .menu__btn > span::before {
     content: '';
     top: -8px;
   }
-  .menu__button > span::after {
+  .menu__btn > span::after {
     content: '';
     top: 8px;
   }
@@ -109,7 +114,6 @@
     transition-duration: .25s;
   }
   .menu__item {
-    position: absolute;
     display: block;
     padding: 12px 24px;
     color: #333;

@@ -556,7 +556,7 @@ header {
 
 /* Responsive Hamburger Menu */
 @media screen and (min-width: 900px) {
-  .hamburger-menu, #menu__toggle, .menu__button, .menu__box, .menu__item {
+  .hamburger-menu, #menu__toggle, .menu__btn, .menu__box, .menu__item {
     display: none;
   }
 }
@@ -569,22 +569,20 @@ header {
 
 #menu__toggle {
   opacity: 0;
-  position: -webkit-sticky;
-  position: sticky;
 }
 
-#menu__toggle:checked + .menu__button > span {
+#menu__toggle:checked + .menu__btn > span {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-#menu__toggle:checked + .menu__button > span::before {
+#menu__toggle:checked + .menu__btn > span::before {
   top: 0;
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
 }
 
-#menu__toggle:checked + .menu__button > span::after {
+#menu__toggle:checked + .menu__btn > span::after {
   top: 0;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
@@ -594,7 +592,7 @@ header {
   left: 0 !important;
 }
 
-.menu__button {
+.menu__btn {
   position: fixed;
   top: 20px;
   left: 20px;
@@ -604,24 +602,24 @@ header {
   z-index: 1;
 }
 
-.menu__button > span,
-.menu__button > span::before,
-.menu__button > span::after {
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
   display: block;
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: #cfc85f;
+  background-color: #616161;
   -webkit-transition-duration: .25s;
           transition-duration: .25s;
 }
 
-.menu__button > span::before {
+.menu__btn > span::before {
   content: '';
   top: -8px;
 }
 
-.menu__button > span::after {
+.menu__btn > span::after {
   content: '';
   top: 8px;
 }
@@ -644,7 +642,6 @@ header {
 }
 
 .menu__item {
-  position: absolute;
   display: block;
   padding: 12px 24px;
   color: #333;
@@ -702,7 +699,7 @@ header {
 /* Home Carousel Button */
 .home__carousel-button-container {
   text-align: center;
-  margin-top: 7%;
+  margin: 5%;
 }
 
 .home__carousel-button {
@@ -743,8 +740,8 @@ body {
 }
 
 .carousel-cell {
-  width: 70%;
-  height: 200px;
+  width: 100%;
+  height: 250px;
   /* flex-box, center image in cell */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -783,18 +780,6 @@ body {
   filter: none;
 }
 
-@media screen and (min-width: 768px) {
-  .carousel-cell {
-    height: 400px;
-  }
-}
-
-@media screen and (min-width: 960px) {
-  .carousel-cell {
-    width: 60%;
-  }
-}
-
 /* buttons, no circle */
 .flickity-prev-next-button {
   width: 60px;
@@ -831,14 +816,28 @@ body {
   display: none;
 }
 
+/* Responsive Carousel */
+@media screen and (min-width: 768px) {
+  .carousel-cell {
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .carousel-cell {
+    width: 70%;
+    position: relative;
+  }
+}
+
 /* Home Carousel h2 */
-.home__carousel-h2 {
-  font-size: 1.75em;
-  font-weight: bolder;
+.home__carousel-h1 {
+  font-size: 1.5em;
+  text-decoration: underline;
   color: #633636;
   text-shadow: 2px 1.5px #fdeab2;
   text-align: center;
-  margin: 5%;
+  margin: 4%;
 }
 
 /* Home map */
