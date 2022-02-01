@@ -37,7 +37,6 @@
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    z-index: 5;
   }
   
   #return-to-top:hover {
@@ -46,6 +45,5 @@
   }
   #return-to-top:hover i {
     color: $bordeaux-general;
-    z-index: 5;
   }
   

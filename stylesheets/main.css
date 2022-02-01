@@ -721,7 +721,6 @@ header {
   font-size: 27px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  z-index: 5;
 }
 
 #return-to-top:hover {
@@ -731,7 +730,6 @@ header {
 
 #return-to-top:hover i {
   color: #633636;
-  z-index: 5;
 }
 
 /* Home Carousel Button */
