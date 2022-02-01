@@ -380,10 +380,21 @@ a:hover, a:active, a:focus {
 .ariane {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 15px;
-  color: #444444;
   text-decoration: none;
   padding-left: 60px;
   padding-top: 10px;
+}
+
+.ariane p {
+  color: black;
+}
+
+.ariane p a {
+  color: black;
+}
+
+.ariane p a:hover {
+  color: #cfc85f;
 }
 
 .ariane span {
