@@ -210,21 +210,4 @@ $main-color: #b38c52;
 }
 
 
-.link{
- position:absolute;
- left:0;
- bottom:0;
- padding:20px;
- z-index:9999;
- a{
-     display:flex;
-     align-items:center;
-     text-decoration:none;
-     color:#fff;
- }
- .fa{
-   font-size:28px;
-   margin-right:8px;
-   color:#fff;
- }
-}
+
