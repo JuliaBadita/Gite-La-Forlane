@@ -1,21 +1,6 @@
 // Histoire du gîte - Page
 
-//General
-body {
-  margin: 0;
-//background-color: #1d1d1e;
-  font-family: "Roboto", sans-serif;
-}
 
-* {
-  outline: none;
-}
-
-//Colors
-$white-20: rgba(255, 255, 255, 0.2);
-$white-60: rgba(255, 255, 255, 0.6);
-$white: rgba(255, 255, 255, 1);
-$main-color: #b38c52;
 
 //Timeline
 
@@ -85,12 +70,12 @@ $main-color: #b38c52;
         top: 45px;
         left: 0;
         content: "";
-        border-bottom: 1px solid $main-color;
+        border-bottom: 1px solid $history-color;
      }
      .year {
         font-size: 36px;
         line-height: 36px;
-        color: $main-color;
+        color: $history-color;
         display: table;
         letter-spacing: -1px;
         padding-right: 10px;
@@ -114,7 +99,7 @@ $main-color: #b38c52;
      .month {
         font-size: 12px;
         text-transform: uppercase;
-        color: $main-color;
+        color: $history-color;
         display: block;
         margin-bottom: 10px;
         font-weight: 900;
@@ -145,14 +130,14 @@ $main-color: #b38c52;
            border-radius: 100%;
            top: 0;
            left: 0;
-           background-color: $main-color;
+           background-color: $history-color;
         }
         &:before {
            width: 1px;
            height: 100%;
            top: 0;
            left: 4px;
-           background-color: $main-color;
+           background-color: $history-color;
         }
      }
   }
@@ -184,8 +169,8 @@ $main-color: #b38c52;
      }
      &.slick-active {
         button {
-           background: $main-color;
-           border-color: $main-color;
+           background: $history-color;
+           border-color: $history-color;
         }
      }
      button {
@@ -194,16 +179,16 @@ $main-color: #b38c52;
         width: 10px;
         height: 10px;
         padding: 0;
-        background-color: beige;
-        border-color: $white-60;
+        background-color: $history-dots;
+        border-color: $white-general;
         cursor: pointer;
         -webkit-transition: all 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53);
         -o-transition: all 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53);
 
         transition: all 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53);
         &:hover {
-           background: $main-color;
-           border-color: $main-color;
+           background: $history-color;
+           border-color: $history-color;
         }
      }
   }

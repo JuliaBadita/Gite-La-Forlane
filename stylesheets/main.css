@@ -918,15 +918,6 @@ img {
   width: 100%;
 }
 
-body {
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-}
-
-* {
-  outline: none;
-}
-
 .timeline-carousel {
   padding: 86px 6.9444% 90px 6.9444%;
   position: relative;
@@ -1114,7 +1105,7 @@ body {
   height: 10px;
   padding: 0;
   background-color: beige;
-  border-color: rgba(255, 255, 255, 0.6);
+  border-color: white;
   cursor: pointer;
   -webkit-transition: all 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53);
   transition: all 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53);
