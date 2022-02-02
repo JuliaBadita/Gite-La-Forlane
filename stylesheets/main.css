@@ -876,7 +876,7 @@ body {
   }
 }
 
-/* H1 Home */
+/* h1 Home */
 .h1__home {
   margin-top: 110px;
 }
@@ -924,7 +924,7 @@ img {
 }
 
 .history__timeline-carousel {
-  padding: 86px 6.9444% 90px 6.9444%;
+  padding: 86px 6.95% 90px 6.95%;
   position: relative;
   overflow: hidden;
 }
@@ -935,9 +935,8 @@ img {
   display: block;
   top: 0;
   height: 100%;
-  width: 6.9444%;
+  width: 6.95%;
   z-index: 3;
-  width: 6.9444%;
 }
 
 .history__timeline-carousel:after {

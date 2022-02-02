@@ -1,11 +1,10 @@
 // Histoire du gîte - Page
 
 
-
-//Timeline
+// Carousel Timeline 
 
 .history__timeline-carousel {
-  padding: 86px 6.9444% 90px 6.9444%;
+  padding: 86px $history-percents 90px $history-percents;
   position: relative;
   overflow: hidden;
   &:after,
@@ -15,9 +14,8 @@
      display: block;
      top: 0;
      height: 100%;
-     width: 6.9444%;
+     width: $history-percents;
      z-index: 3;
-     width: 6.9444%;
   }
   &:after {
      left: 0;
@@ -183,6 +181,3 @@
      }
   }
 }
-
-
-
