@@ -560,7 +560,7 @@ header {
 
 /* Couleur des liens à l'intérieur de la barre de nav */
 .navbar a {
-  color: #ffffff;
+  color: white;
   padding: 30px 16px;
   text-decoration: none;
   font-size: 17px;
@@ -592,7 +592,7 @@ header {
 }
 
 .menu__box {
-  z-index: 0;
+  z-index: 5;
 }
 
 #menu__toggle {
@@ -627,7 +627,7 @@ header {
   width: 26px;
   height: 26px;
   cursor: pointer;
-  z-index: 2;
+  z-index: 7;
 }
 
 .menu__btn > span,
@@ -667,7 +667,7 @@ header {
           box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
   -webkit-transition-duration: .25s;
           transition-duration: .25s;
-  z-index: 1;
+  z-index: 6;
 }
 
 .menu__item {
@@ -684,6 +684,7 @@ header {
 
 .menu__item:hover {
   background-color: #CFD8DC;
+  text-decoration: none;
 }
 
 .nav__svg {
