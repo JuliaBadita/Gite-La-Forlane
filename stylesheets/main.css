@@ -743,8 +743,8 @@ header {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
   text-transform: uppercase;
-  border: 2px #cfbb49 solid;
-  background-color: #cfbb49;
+  border: 2px #cfc85f solid;
+  background-color: #cfc85f;
   padding: 8px 30px;
   border-radius: 30px;
   color: #4f0909;
@@ -752,8 +752,8 @@ header {
 }
 
 .home__carousel-button:hover {
-  border: 2px #cfbb49 solid;
-  background-color: #cfbb49;
+  border: 2px #cfc85f solid;
+  background-color: #cfc85f;
   padding: 10px 40px;
   border-radius: 40px;
   font-weight: 700;
@@ -918,13 +918,13 @@ img {
   width: 100%;
 }
 
-.timeline-carousel {
+.history__timeline-carousel {
   padding: 86px 6.9444% 90px 6.9444%;
   position: relative;
   overflow: hidden;
 }
 
-.timeline-carousel:after, .timeline-carousel:before {
+.history__timeline-carousel:after, .history__timeline-carousel:before {
   content: "";
   position: absolute;
   display: block;
@@ -935,24 +935,24 @@ img {
   width: 6.9444%;
 }
 
-.timeline-carousel:after {
+.history__timeline-carousel:after {
   left: 0;
 }
 
-.timeline-carousel:before {
+.history__timeline-carousel:before {
   right: 0;
   opacity: 0;
 }
 
-.timeline-carousel .slick-list {
+.history__timeline-carousel .slick-list {
   overflow: visible;
 }
 
-.timeline-carousel .slick-dots {
+.history__timeline-carousel .slick-dots {
   bottom: -73px;
 }
 
-.timeline-carousel h1 {
+.history__timeline-carousel h1 {
   color: #cfc85f;
   font-size: 46px;
   line-height: 50pd;
@@ -961,31 +961,31 @@ img {
   text-align: center;
 }
 
-.timeline-carousel__image {
+.history__timeline-carousel__image {
   padding-right: 30px;
 }
 
-.timeline-carousel__item {
+.history__timeline-carousel__item {
   cursor: pointer;
 }
 
-.timeline-carousel__item .media-wrapper {
+.history__timeline-carousel__item .history__media-wrapper {
   opacity: 0.4;
   padding-bottom: 71.4%;
   -webkit-transition: all 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53);
   transition: all 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53);
 }
 
-.timeline-carousel__item:last-child .timeline-carousel__item-inner:after {
+.history__timeline-carousel__item:last-child .history__timeline-carousel__item-inner:after {
   width: calc(100% - 30px);
 }
 
-.timeline-carousel__item-inner {
+.history__timeline-carousel__item-inner {
   position: relative;
   padding-top: 45px;
 }
 
-.timeline-carousel__item-inner:after {
+.history__timeline-carousel__item-inner:after {
   position: absolute;
   width: 100%;
   top: 45px;
@@ -994,7 +994,7 @@ img {
   border-bottom: 1px solid #b38c52;
 }
 
-.timeline-carousel__item-inner .year {
+.history__timeline-carousel__item-inner .history__year {
   font-size: 36px;
   line-height: 36px;
   color: #b38c52;
@@ -1008,7 +1008,7 @@ img {
   font-weight: 900;
 }
 
-.timeline-carousel__item-inner .year:after {
+.history__timeline-carousel__item-inner .history__year:after {
   content: "";
   position: absolute;
   display: block;
@@ -1019,7 +1019,7 @@ img {
   z-index: 3;
 }
 
-.timeline-carousel__item-inner .month {
+.history__timeline-carousel__item-inner .history__month {
   font-size: 12px;
   text-transform: uppercase;
   color: #b38c52;
@@ -1028,7 +1028,7 @@ img {
   font-weight: 900;
 }
 
-.timeline-carousel__item-inner p {
+.history__timeline-carousel__item-inner p {
   font-size: 12px;
   color: black;
   line-height: 18px;
@@ -1037,19 +1037,19 @@ img {
   margin-bottom: 15px;
 }
 
-.timeline-carousel__item-inner .pointer {
+.history__timeline-carousel__item-inner .history__pointer {
   height: 29px;
   position: relative;
   z-index: 1;
   margin: -4px 0 16px;
 }
 
-.timeline-carousel__item-inner .pointer:after, .timeline-carousel__item-inner .pointer:before {
+.history__timeline-carousel__item-inner .history__pointer:after, .history__timeline-carousel__item-inner .history__pointer:before {
   position: absolute;
   content: "";
 }
 
-.timeline-carousel__item-inner .pointer:after {
+.history__timeline-carousel__item-inner .history__pointer:after {
   width: 9px;
   height: 9px;
   border-radius: 100%;
@@ -1058,7 +1058,7 @@ img {
   background-color: #b38c52;
 }
 
-.timeline-carousel__item-inner .pointer:before {
+.history__timeline-carousel__item-inner .history__pointer:before {
   width: 1px;
   height: 100%;
   top: 0;
@@ -1066,7 +1066,7 @@ img {
   background-color: #b38c52;
 }
 
-.timeline-carousel .slick-active .media-wrapper {
+.history__timeline-carousel .slick-active .history__media-wrapper {
   opacity: 1 !important;
 }
 
