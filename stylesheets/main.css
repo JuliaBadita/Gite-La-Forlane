@@ -401,6 +401,15 @@ a:hover, a:active, a:focus {
   font-weight: 700;
 }
 
+.h1__general {
+  color: #cfc85f;
+  font-size: 37px;
+  line-height: 50pd;
+  margin-bottom: 40px;
+  font-weight: 800;
+  text-align: center;
+}
+
 /**
  * Basic typography style for copy text
  */
@@ -533,7 +542,7 @@ header {
 .header-contact a:hover {
   color: #f88686;
   font-weight: bold;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* ============================================================================
@@ -739,13 +748,13 @@ header {
   margin: 5%;
 }
 
-.home__carousel-button {
+.home__button {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
   text-transform: uppercase;
-  border: 2px #cfc85f solid;
-  background-color: #cfc85f;
+  border: 2px #cfbb49 solid;
+  background-color: #cfbb49;
   padding: 8px 30px;
   border-radius: 30px;
   color: #4f0909;
@@ -753,12 +762,12 @@ header {
 }
 
 .home__carousel-button:hover {
-  border: 2px #cfc85f solid;
-  background-color: #cfc85f;
+  border: 2px #cfbb49 solid;
+  background-color: #cfbb49;
   padding: 10px 40px;
   border-radius: 40px;
   font-weight: 700;
-  color: #f7f4f4;
+  color: white;
   text-decoration: none;
 }
 
@@ -867,14 +876,9 @@ body {
   }
 }
 
-/* Home Carousel h2 */
-.home__carousel-h1 {
-  font-size: 1.5em;
-  text-decoration: underline;
-  color: #633636;
-  text-shadow: 2px 1.5px #fdeab2;
-  text-align: center;
-  margin: 4%;
+/* H1 Home */
+.h1__home {
+  margin-top: 110px;
 }
 
 /* Home map */
@@ -951,15 +955,6 @@ img {
 
 .history__timeline-carousel .slick-dots {
   bottom: -73px;
-}
-
-.history__timeline-carousel h1 {
-  color: #cfc85f;
-  font-size: 46px;
-  line-height: 50pd;
-  margin-bottom: 40px;
-  font-weight: 900;
-  text-align: center;
 }
 
 .history__timeline-carousel__image {

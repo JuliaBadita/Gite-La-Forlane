@@ -59,9 +59,9 @@ header {
     a {
       color: $white_general;
       &:hover{
-        color: rgb(248, 134, 134);
+        color: $a-hover;
         font-weight: bold;
-        text-decoration: underline;
+        text-decoration: none;
       }
     }
   }

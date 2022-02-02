@@ -2,16 +2,12 @@
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
 
-/* Home Carousel h2 */
- 
-.home__carousel-h1 {
-    font-size: 1.5em;
-    text-decoration: underline;
-    color: $bordeaux-general;
-    text-shadow: 2px 1.5px $carousel-text-shadow;
-    text-align: center;
-    margin: 4%;
-}  
+/* H1 Home */
+
+.h1__home {
+  margin-top: 110px;
+}
+
 
 /* Home map */
 

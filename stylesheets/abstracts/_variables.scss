@@ -71,6 +71,11 @@ $breakpoints: (
 $base-url: '/assets/' !default;
 
 
+/// <a>
+
+$a-hover: rgb(248, 134, 134);
+
+
 /// General colors for the website 
 
 $yellow-general: #cfc85f;
@@ -92,3 +97,10 @@ $carousel-text-shadow: #fdeab2;
 $history-color: #b38c52;
 
 $history-dots: beige;
+
+
+/// Button 
+
+$button-yellow: #cfbb49;
+
+$button-red: #4f0909;
