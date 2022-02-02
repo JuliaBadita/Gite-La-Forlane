@@ -1,0 +1,339 @@
+/* styles reset */
+.card {
+  border:0;
+}
+
+
+/* BOUTON RETOUR HOME - bouton liseré or, texte majuscule or */
+.button-home {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 2px #cfbb49 solid;
+  /*background-color: #cfbb49;*/
+padding: 8px 30px;
+border-radius: 30px;
+color: #4f0909;
+text-decoration: none;
+margin-top: 45px;
+margin-bottom: 15px;
+}
+/* effet survol */
+.button-home:hover {
+border: 2px #cfbb49 solid;
+  background-color: #cfbb49;
+padding: 8px 30px;
+border-radius: 30px;
+color: #4f0909;
+text-decoration: none;
+}
+/*fin BOUTON RETOUR HOME */
+
+/* BOUTON SAVOIR PLUS - bouton liseré or, texte majuscule or */
+.button-infoplus {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 2px #cfbb49 solid;
+  /*background-color: #cfbb49;*/
+padding: 8px 28px;
+margin-bottom: 15px;
+border-radius: 30px;
+color: #4f0909;
+text-decoration: none;
+}
+/* effet survol */
+.button-infoplus:hover {
+border: 2px #cfbb49 solid;
+  background-color: #cfbb49;
+padding: 8px 28px;
+border-radius: 30px;
+color: #4f0909;
+text-decoration: none;
+}
+/*fin BOUTON SAVOIR PLUS */
+
+/* place les boutons au centre d'un article */
+.button-center {
+  text-align: center;
+  padding-top: 24px;
+}
+/* place les boutons au centre de la page, pour les boutons retour */
+.page-center {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.card-picto {
+  height: 14px;
+  padding-right: 10px;
+}
+
+/* tracer des lignes separation */
+.around-line p{
+  border-bottom: 1px solid rgb(129, 129, 129);
+  line-height: 24px;
+  margin-bottom: 0;
+}
+/* ligne invisible separation */
+.around-line-invisible p{
+  border-bottom: 1px solid rgb(255, 255, 255);
+  line-height: 14px;
+  margin-bottom: 0;
+}
+
+
+
+/* card group aka PRIMARY */
+.card-title {
+  text-align: center;
+}
+.card-group .card-primary {
+  padding-bottom: 20px;
+  z-index: 100;
+}
+.card-group .card-primary:hover {
+  box-shadow: 0 15px 30px -20px rgba(12, 5, 62, 0.25);
+  padding-bottom: 20px;
+  z-index: 100;
+}
+.card-group .card-primary:hover .card-title{
+  color: #a01800;
+}
+/* image arrondie grace au border-radius */
+.card-group .card-primary .card-img-top{
+  width:260px;
+  height:260px;
+  margin: 15px auto 15px;
+  border-radius: 50%;
+}
+/* image arrondie grace au border-radius */
+.card-group .card-primary .card-img-toptwo{
+  width:260px;
+  height:260px;
+  margin: 15px auto 15px;
+  border-radius: 50%;
+}
+/* couleur sous le petit encart sous la grande photo */
+.card-group .card-primary .card-body > .badge {
+  margin-bottom: 16px;
+  background-color: #a01800;
+}
+.card-group .card-primary .card-body {
+  padding: 0 32px;
+}
+
+/* titres articles couleurs primary */
+.card-group .card-primary .card-title {
+  color: #190e5e;
+  font-size: 18px;
+  line-height: 1.15;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.card-group .card-primary .card-text {
+  color: #151518;
+  font-size: 15px;
+  line-height: 1.3;
+  font-weight: 400;
+  text-align: justify;
+}
+.card-group .card-primary .card-footer {
+  padding: 12px 0 24px;
+  background: transparent;
+  border:0;
+}
+
+
+/* card deck aka SECONDARY */
+
+.card-deck .card-secondary {
+  padding: 0px 20px 0; /*24 32 0*/
+  margin: 12px;
+  border-radius: 0;/* 0 */
+}
+/*
+.card-deck .card-secondary:hover {
+  box-shadow: 0 20px 30px -20px rgba(12, 5, 62, 0.15);
+}*/
+/* couleur titres au survol */
+.card-deck .card-secondary:hover .card-title{
+  color: #a01800;
+}
+.card-deck .card-secondary .card-body {
+  padding: 0;
+}
+.card-deck .card-secondary .card-img-top{
+  margin-bottom: 15px;/*20*/
+  border-radius: 0px;
+}
+.card-deck .card-secondary .card-title {
+  color: #261c6a;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.card-deck .card-secondary .card-text {
+  color: #151518;
+  font-size: 14px;
+  line-height: 1.25;
+  font-weight: 400;
+  margin-bottom: 4px;
+  text-align: justify;
+}
+.card-deck .card-secondary .card-text-km {
+  color: #fff;
+  background-color: #a01800;
+  border-radius: 6px;
+  font-size: 13px;
+  line-height: 1.4;
+  height: 20px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  text-align: center;
+}
+.card-deck .card-secondary .card-text-km2 {
+  color: #151518;
+  background-color: #f1df74;
+  border-radius: 6px;
+  font-size: 13px;
+  line-height: 1.4;
+  height: 20px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  text-align: center;
+}
+.card-deck .card-secondary .card-text-resto {
+  color: #151518;
+  background-color: antiquewhite;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 600;
+  height: 24px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+.card-deck .card-secondary .card-footer {
+  padding: 9px 0 25px;
+  background: transparent;
+  border:0;
+}
+.card-deck .card-secondary .card-footer .btn{
+  margin-right: -10px;
+}
+/* secondary resto */
+.card-deck .card-secondary-resto {
+  padding: 24px 32px 0;
+  margin: 12px;
+  border-radius: 0;
+  background-color: rgb(23, 24, 24);
+}
+.card-deck .card-secondary-resto:hover {
+  box-shadow: 0 40px 40px -20px rgba(12, 5, 62, 0.15);
+}
+.card-deck .card-secondary:hover .card-title{
+  color: #a01800;
+}
+.card-deck .card-secondary .card-body {
+  padding: 0;
+}
+.card-deck .card-secondary .card-img-top{
+  margin-bottom: 20px;
+  border-radius: 0px;
+}
+.card-deck .card-secondary .card-title-resto {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.card-deck .card-secondary .card-text-resto {
+  color: #151518;
+  background-color: rgb(189, 236, 255);
+  font-size: 14px;
+  border-radius: 6px;
+  height: 24px;
+  line-height: 1.4;
+  font-weight: 500;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+/* card AWARDS */
+.awards-container {
+  background-image: linear-gradient(to bottom, #7e73d1 2%, #b9aeff);
+  margin: 0 -30px;
+  padding: 30px;
+}
+.awards-container h2 {
+  color: #fff;
+}
+
+.card-resto {
+  background-color: #cfbb49;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.card-deck > .card-awards {
+  padding: 32px 32px 0;
+  margin: 16px;
+  border-radius: 0;
+  background: transparent;
+}
+.card-deck .card-awards:hover {
+  box-shadow: 0 40px 60px -20px rgba(8, 4, 43, 0.8);
+  background-color: #363636;
+}
+.card-deck .card-awards:hover .card-footer .btn{
+  visibility: visible;
+}
+
+.card-deck > .card-awards .card-body {
+  padding: 0;
+}
+.card-deck > .card-awards .card-img-top{
+  margin-bottom: 24px;
+  border-radius: 0px;
+  height: 80px;
+  display: flex; justify-content: center;
+}
+.card-deck .card-awards .card-img-top img {
+  margin: auto;
+}
+.card-deck .card-awards .card-title {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin-bottom: 3px;
+}
+.card-deck .card-awards .card-footer {
+  padding: 9px 0 13px;
+  border:0;
+}
+.card-deck .card-awards .card-footer .btn{
+  color: #fff;
+  visibility: hidden;
+}
+
+
+
+/* PAGE LAYOUT */
+main{
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width:1360px;
+  margin:0 auto;
+}
+/* titres de section */
+h2 {
+  margin-top: 20px;
+  font-size: 24px;
+  text-align: center;
+  color: #cfbb49;
+}
