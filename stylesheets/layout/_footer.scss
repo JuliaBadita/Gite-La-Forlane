@@ -1,3 +1,197 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+
+/* == DEBUT DU CODE ================================================
+==================================================================*/
+
+
+/* FOOTER */
+
+h2, h3{
+    color: #fff;
+}
+
+/* titres de secteurs */
+h2{
+    font-size: 17px;
+    font-family: 'Source Serif Pro', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+h3 entreprise{
+    font-size: 21px;
+    font-family: 'Source Serif Pro', serif, Arial, Helvetica, sans-serif;
+}
+
+p{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+p footer{
+    line-height: 25px;
+}
+
+/* debut de la page, font à changer */
+.entreprise{
+    font-family: 'Source Serif Pro', serif;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+/* fond couleur du footer */
+.footer-top{
+ padding: 20px 0;
+ background-color: #151518;
+}
+
+/* fond couleur footer derriere texte
+.container-footer{
+ background-color: #4b0909;
+}
+*/
+
+
+/* reglage des colonnes et margin separation */
+.row-footer{
+  display: grid !important;
+  /*grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));*/
+  grid-template-columns: repeat(4, minmax(270px, 1fr)) !important;
+  gap: 25px !important;
+  line-height: 20px !important;
+  margin: 20px !important;
+  padding: 0px !important;
+}
+
+.mail-input {
+    width: 171px !important;
+}
+
+@media screen and (max-width: 900px) {
+    .row-footer{
+        grid-template-columns: repeat(2, minmax(270px, 1fr));
+    }
+    
+  }
+
+.segment-one h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: floralwhite;
+    letter-spacing: 3px;
+    margin: 20px 0;
+}
+
+.segment-two h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: floralwhite;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.segment-two h2:before{
+    content: '|';
+    color: #fff;
+    padding-right: 10px;
+}
+
+.segment-two ul{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* tracer des lignes blanches */
+.segment-two ul li{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    line-height: 40px;
+}
+/* retirer soulignement sous liens */
+.segment-two ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+/* titre 3eme colonne */
+.segment-three h2{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.segment-three h2:before{
+    content: '|';
+    color: #fff;
+    padding-right: 10px;
+}
+/* fond des pictos reseaux */
+.segment-three a{
+    background: #cfbb49;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+}
+/* couleur des pictos reseaux */
+.segment-three a i{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    /* positionnement picto dans le rond */
+    padding: 10px 12px;
+}
+
+.segment-four h2{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.segment-four h2:before{
+    content: '|';
+    color: #fff;
+    padding-right: 10px;
+}
+
+.segment-four form input[type=submit]{
+    background: #fd3737;
+    border: none;
+    padding: 5px 12px;
+    margin-left: -5px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+.footer-gitesFrance{
+  max-width: 150px;
+}
+.footer-image{
+  max-height: 150px;
+  margin-bottom: 5px;
+}
+.footer-bottom-text{
+    text-align: center;
+    background: #000;
+    line-height: 65px;
+    padding: 0;
+    margin: 0;
+}
+
+/* responsive css */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .md-mb-30{
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .sm-mb-30{
+        margin-bottom: 30px;
+    }
+    .footer-top{
+        padding: 50px 0;
+    }
+}

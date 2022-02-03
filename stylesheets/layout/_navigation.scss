@@ -42,13 +42,13 @@
 
   /* Responsive Hamburger Menu */
 
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: 970px) {
     .hamburger-menu, #menu__toggle, .menu__btn, .menu__box, .menu__item {
       display: none;
     }
   }
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 970px) {
     header, .navbar, .overlay {
       display: none;
     }

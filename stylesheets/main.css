@@ -379,6 +379,7 @@ a:hover, a:active, a:focus {
 
 .ariane {
   font-family: 'Josefin Sans', sans-serif;
+  color: #444;
   font-size: 15px;
   text-decoration: none;
   padding-left: 60px;
@@ -545,9 +546,219 @@ header {
   text-decoration: none;
 }
 
+@media screen and (min-width: 970px) {
+  header {
+    width: 100%;
+    height: 40vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .header-span, .header-adress, .header-contact {
+    font-size: small;
+  }
+}
+
 /* ============================================================================
     grid
      ============================================================================ */
+/* == DEBUT DU CODE ================================================
+==================================================================*/
+/* FOOTER */
+h2, h3 {
+  color: #fff;
+}
+
+/* titres de secteurs */
+h2 {
+  font-size: 17px;
+  font-family: 'Source Serif Pro', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+h3 entreprise {
+  font-size: 21px;
+  font-family: 'Source Serif Pro', serif, Arial, Helvetica, sans-serif;
+}
+
+p {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+p footer {
+  line-height: 25px;
+}
+
+/* debut de la page, font à changer */
+.entreprise {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+/* fond couleur du footer */
+.footer-top {
+  padding: 20px 0;
+  background-color: #151518;
+}
+
+/* fond couleur footer derriere texte
+.container-footer{
+ background-color: #4b0909;
+}
+*/
+/* reglage des colonnes et margin separation */
+.row-footer {
+  display: -ms-grid !important;
+  display: grid !important;
+  /*grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));*/
+  -ms-grid-columns: (minmax(270px, 1fr))[4] !important;
+      grid-template-columns: repeat(4, minmax(270px, 1fr)) !important;
+  gap: 25px !important;
+  line-height: 20px !important;
+  margin: 20px !important;
+  padding: 0px !important;
+}
+
+.mail-input {
+  width: 171px !important;
+}
+
+@media screen and (max-width: 900px) {
+  .row-footer {
+    -ms-grid-columns: (minmax(270px, 1fr))[2];
+        grid-template-columns: repeat(2, minmax(270px, 1fr));
+  }
+}
+
+.segment-one h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: floralwhite;
+  letter-spacing: 3px;
+  margin: 20px 0;
+}
+
+.segment-two h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: floralwhite;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.segment-two h2:before {
+  content: '|';
+  color: #fff;
+  padding-right: 10px;
+}
+
+.segment-two ul {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* tracer des lignes blanches */
+.segment-two ul li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  line-height: 40px;
+}
+
+/* retirer soulignement sous liens */
+.segment-two ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* titre 3eme colonne */
+.segment-three h2 {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.segment-three h2:before {
+  content: '|';
+  color: #fff;
+  padding-right: 10px;
+}
+
+/* fond des pictos reseaux */
+.segment-three a {
+  background: #cfbb49;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+/* couleur des pictos reseaux */
+.segment-three a i {
+  font-size: 20px;
+  color: black;
+  /* positionnement picto dans le rond */
+  padding: 10px 12px;
+}
+
+.segment-four h2 {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.segment-four h2:before {
+  content: '|';
+  color: #fff;
+  padding-right: 10px;
+}
+
+.segment-four form input[type=submit] {
+  background: #fd3737;
+  border: none;
+  padding: 5px 12px;
+  margin-left: -5px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+.footer-gitesFrance {
+  max-width: 150px;
+}
+
+.footer-image {
+  max-height: 150px;
+  margin-bottom: 5px;
+}
+
+.footer-bottom-text {
+  text-align: center;
+  background: #000;
+  line-height: 65px;
+  padding: 0;
+  margin: 0;
+}
+
+/* responsive css */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .md-mb-30 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .sm-mb-30 {
+    margin-bottom: 30px;
+  }
+  .footer-top {
+    padding: 50px 0;
+  }
+}
+
 /* ============================================================================
   navbar
    ============================================================================ */
@@ -588,13 +799,13 @@ header {
 }
 
 /* Responsive Hamburger Menu */
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 970px) {
   .hamburger-menu, #menu__toggle, .menu__btn, .menu__box, .menu__item {
     display: none;
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 970px) {
   header, .navbar, .overlay {
     display: none;
   }
@@ -702,7 +913,7 @@ header {
 }
 
 /* ============================================================================
-  Arrow Back to Top
+  Arrow Up
    ============================================================================ */
 /*Arrow Back To Top */
 #return-to-top {
@@ -748,7 +959,7 @@ header {
   margin: 5%;
 }
 
-.home__button {
+.home__carousel-button {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
@@ -771,6 +982,137 @@ header {
   text-decoration: none;
 }
 
+/* BOUTON RETOUR HOME - bouton liseré or, texte majuscule or */
+.button-home {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 2px #cfbb49 solid;
+  /*background-color: #cfbb49;*/
+  padding: 8px 30px;
+  border-radius: 30px;
+  color: #4f0909;
+  text-decoration: none;
+  margin-top: 45px;
+  margin-bottom: 15px;
+}
+
+/* effet survol */
+.button-home:hover {
+  border: 2px #cfbb49 solid;
+  background-color: #cfbb49;
+  padding: 8px 30px;
+  border-radius: 30px;
+  color: #4f0909;
+  text-decoration: none;
+}
+
+/*fin BOUTON RETOUR HOME */
+/* BOUTON SAVOIR PLUS - bouton liseré or, texte majuscule or */
+.button-infoplus {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 2px #cfbb49 solid;
+  /*background-color: #cfbb49;*/
+  padding: 8px 28px;
+  margin-bottom: 15px;
+  border-radius: 30px;
+  color: #4f0909;
+  text-decoration: none;
+}
+
+/* effet survol */
+.button-infoplus:hover {
+  border: 2px #cfbb49 solid;
+  background-color: #cfbb49;
+  padding: 8px 28px;
+  border-radius: 30px;
+  color: #4f0909;
+  text-decoration: none;
+}
+
+/*fin BOUTON SAVOIR PLUS */
+/* place les boutons au centre d'un article */
+.button-center {
+  text-align: center;
+  padding-top: 24px;
+}
+
+/* place les boutons au centre de la page, pour les boutons retour */
+.page-center {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/*
+
+// Make a button look and behave like a link
+.btn-link {
+    font-weight: $font-weight-normal;
+    color: $link-color;
+    text-decoration: $link-decoration;
+  
+    @include hover() {
+      color: $link-hover-color;
+      text-decoration: $link-hover-decoration;
+    }
+  
+    &:focus,
+    &.focus {
+      text-decoration: $link-hover-decoration;
+      box-shadow: none;
+    }
+  
+    &:disabled,
+    &.disabled {
+      color: $btn-link-disabled-color;
+      pointer-events: none;
+    }
+  
+    // No need for an active state here
+  }
+  
+  
+  //
+  // Button Sizes
+  //
+  
+  .btn-lg {
+    @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $btn-font-size-lg, $btn-line-height-lg, $btn-border-radius-lg);
+  }
+  
+  .btn-sm {
+    @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-line-height-sm, $btn-border-radius-sm);
+  }
+  
+  
+  //
+  // Block button
+  //
+  
+  .btn-block {
+    display: block;
+    width: 100%;
+  
+    // Vertically space out multiple block buttons
+    + .btn-block {
+      margin-top: $btn-block-spacing-y;
+    }
+  }
+  
+  // Specificity overrides
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"] {
+    &.btn-block {
+      width: 100%;
+    }
+  }*/
 /*==========================================================================================
 carousel 
 ===========================================================================================*/

@@ -93,12 +93,12 @@ text-decoration: none;
 }
 .card-group .card-primary {
   padding-bottom: 20px;
-  z-index: 100;
+  z-index: 3;
 }
 .card-group .card-primary:hover {
   box-shadow: 0 15px 30px -20px rgba(12, 5, 62, 0.25);
   padding-bottom: 20px;
-  z-index: 100;
+  z-index: 3;
 }
 .card-group .card-primary:hover .card-title{
   color: #a01800;
