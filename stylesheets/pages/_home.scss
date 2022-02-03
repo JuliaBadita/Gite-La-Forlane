@@ -9,47 +9,445 @@
 }
 
 
+
+    /* partie intro */
+
+.container_intro {
+  font-family: 'Joselin Sans';
+  font-weight: 500;
+  width: 100%;
+  padding: 50px;
+  padding-top: 30px;
+  }
+  .mb-3 {
+  font-family: 'Joselin Sans';
+  font-size: x-large;
+  color: #222222;
+  }
+  /* texte intro */
+  .my-4 {
+  font-family: 'Joselin Sans';
+  font-size: 18px;
+  color: #222222;
+  min-width: 450px;
+  }
+  
+  .button-intro {
+  text-align: center;
+  }
+  
+  .button-equipements {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+  border: 2px #cfbb49 solid;
+    background-color: #cfbb49;
+  padding: 8px 30px;
+  border-radius: 30px;
+  color: #4f0909;
+  text-decoration: none;
+  }
+  /* effet survol */
+  .button-equipements:hover {
+  border: 2px #a39026 solid;
+    background-color: #a39026;
+    opacity: 0.8;
+  padding: 8px 30px;
+  border-radius: 30px;
+  color: #fff;
+  text-decoration: none;
+  }
+  
+  .img-fluid {
+  height: 70%;
+  margin: 20px;
+  }
+  
+  .broken-grid_photo {
+  width: 40%;
+  
+  }
+  
+  .broken-grid_wrap {
+  flex-direction: column;
+  align-items: left;
+  }
+  .broken-grid_item {
+  flex-shrink: 0;
+  }
+  .broken-grid_align-lt .broken-grid_underlay, 
+  .broken-grid_align-rt .broken-grid_underlay {
+  padding: 0;
+  z-index: 1;
+  }
+  .broken-grid_align-lt .broken-grid_underlay, 
+  .broken-grid_align-rt .broken-grid_overlay {
+  align-self: flex-start;
+  }
+  .broken-grid_align-rt .broken-grid_underlay, 
+  .broken-grid_align-lt .broken-grid_overlay {
+  align-self: flex-end;
+  }
+  .broken-grid_align-lt .broken-grid_overlay, 
+  .broken-grid_align-rt .broken-grid_overlay {
+  margin-top: 4%;
+  padding: 2rem;
+  z-index: 2;
+  }
+  .broken-grid_align-lt .broken-grid_overlay {
+  color: #343A40;
+  /*background-color: #91999e;*/
+  }
+  .broken-grid_align-rt .broken-grid_overlay {
+  color: #FFFFFF;
+  background-color: #343A40;
+  }
+  
+  /* Medium devices (tablets, less than 992px) */
+  @media (max-width: 991px) {
+  .broken-grid_align-lt .broken-grid_overlay, 
+  .broken-grid_align-rt .broken-grid_overlay {
+    margin-top: 0;
+  }
+  }  
+
+
+    
+/* Masonry home */ 
+
+a {
+  transition: all .25s ease-in-out;
+}
+
+/* The title */
+.title {
+  font-weight: 700;
+}
+
+/* The description */
+.desc {
+  font-size: 1em;
+  font-style: italic;
+  font-family: Georgia, serif;
+  color: #465665;
+}
+
+/* Text-centering */
+.title,
+.desc,
+.intro {
+  text-align: center;
+}
+
+/* Intro section / lignes doubles en deco */
+.intro {
+  margin: 1.75em 0 .75em;
+  border-bottom: 3px double rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.75em;
+}
+
+.intro a {
+  opacity: .7;
+}
+
+.intro a:hover {
+  opacity: 1;
+}
+
+.intro h3 {
+  font-size: .825em;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: .25em .75em .75em;
+}
+
+.intro h3 a {
+  font-weight: 400;
+}
+
+/* Masonry grid */
+.masonry {
+  transition: all .5s ease-in-out;
+  column-gap: 30px;
+  column-fill: initial;
+}
+
+/* Masonry item */
+.masonry .brick {
+  margin-bottom: 30px;
+  display: inline-block; /* Fix the misalignment of items */
+  vertical-align: top; /* Keep the item on the very top */
+}
+
+/* Masonry image effects */
+.masonry .brick img {
+  transition: all .5s ease-in-out;
+  backface-visibility: hidden; /* Remove Image flickering on hover */
+}
+
+.masonry .brick:hover img {
+  opacity: .75;
+}
+
+/* Bordered masonry */
+.masonry.bordered {
+  column-rule: 1px solid #eee;
+  column-gap: 50px;
+}
+
+.masonry.bordered .brick {
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Gutterless masonry */
+.masonry.gutterless {
+  column-gap: 0;
+}
+
+.masonry.gutterless .brick {
+  margin-bottom: 0;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 20px;
+  width: 90%;
+  font-family: 'Joselin Sans' Arial, Helvetica, sans-serif;
+  background-color: rgb(255, 255, 255);
+}
+
+img, video {
+  max-width: 100%;
+  /*vertical-align: middle;*/
+  justify-items: center;
+  text-align: center;
+}
+
+/* Masonry on tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+
+/* Masonry on big screens */
+@media only screen and (min-width: 1024px) {
+  .desc {
+    font-size: 1.25em;
+  }
+
+  .intro {
+    letter-spacing: 1px;
+  }
+
+  .masonry {
+    column-count: 3;
+  }
+}
+
+/* partie capacite */
+li, ol, ul {
+  list-style: none;
+  list-style-position: initial;
+  list-style-image: initial;
+  list-style-type: none;
+}
+
+.capacity-picto {
+  max-width: 75%;
+  object-position: 0;
+}
+.no-pets svg {
+  width: 1.75rem;
+  height: 1.3125rem;
+  fill: #ff5f32;
+}
+
+:not(svg) {
+  transform-origin: 0px 0px;
+}
+
+.capacity {
+  font-family: 'Josefin Sans';
+  font-size: 21px;
+  list-style: none;
+  display: flex;
+  align-content: space-between;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+.capacity-title {
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 0.575rem;
+}
+
+.people {
+font-family: 'Josefin Sans';
+  font-size: 21px;
+width: 150px;
+text-align: center;
+}
+.capacity-room {
+font-family: 'Josefin Sans';
+  font-size: 21px;
+width: 150px;
+text-align: center;
+}
+.capacity-surface {
+font-family: 'Josefin Sans';
+  font-size: 21px;
+width: 120px;
+text-align: center;
+}
+.capacity-wifi {
+width: 120px;
+text-align: center;
+max-width: 40%;
+}
+.no-pets {
+width: 120px;
+text-align: center;
+max-width: 40%;
+}
+
+
+.capacity-value {
+  font-size: 1.0625rem;
+}
+
+
+
 /* Home map */
 
 .home__map {
-    border: 0;
-    margin: 2% auto;
-    border-radius: 0.2em;
+  border: 0;
+  margin: 2% auto;
+  border-radius: 0.2em;
 }
 
 .home__map-paragraph {
-  margin: 0 auto;
-  margin-left: 1%;
-  margin-right: 1%;
-  color: $black-general;
+margin: 0 auto;
+margin-left: 1%;
+margin-right: 1%;
+color: $black-general;
 }
 
 .home__map-paragraph-bold {
-  font-weight:700;
-  text-decoration: underline;
+font-weight:700;
+text-decoration: underline;
 }
 
 .home__map-paragraph-span {
-  color: $bordeaux-general;
+color: $bordeaux-general;
 }
 
 
 .principale_map {
-    padding: 10px 30px 30px 30px;
-    iframe{
-        min-height: 350px;
-        height:100%;
-        width:100%;
-        }
-    }
-    
-    img {
-      text-align: center;
-    }
-    
-    .iframe {
-        height:100%;
-        width:100%;
-    }
-    
-    
+  padding: 10px 30px 30px 30px;
+  iframe{
+      min-height: 350px;
+      height:100%;
+      width:100%;
+      }
+  }
+  
+  img {
+    text-align: center;
+  }
+  
+  .iframe {
+      height:100%;
+      width:100%;
+  }
+  
+
+
+
+
+
+
+/* Avis Clients Home */
+
+.container-avis {
+  display: flex;
+  padding: 20px 40px 20px 40px;
+  gap: 50px;
+}
+
+.section-avis {
+  flex: 1; /*grow*/
+  /*
+  border: 2px solid rgb(168, 168, 168, 0.5);*/
+  background-color: rgb(255, 245, 232);
+  /*background-color: rgb(255, 246, 240);*/
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.section-avis-two {
+  flex: 1; /*grow*/
+  
+  border: 2px solid rgba(168, 168, 168, 0.4);
+  /*background-color: rgb(255, 246, 240);*/
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.avatar-title {
+    font-family: 'Josefin Sans';
+    font-size: 21px;
+    margin: 7px;
+}
+.avatar-star {
+    color: #cfbb49;
+    font-size: x-large;
+    margin: 0;
+    padding: 0;
+}
+
+.avatar-name {
+    font-family: 'Josefin Sans';
+    font-size: 18px;
+    margin: 0;
+}
+.avatar-avis {
+    text-align: left;
+    /* evite les coupures de mots */
+    text-justify: newspaper;
+    font-family: 'Josefin Sans';
+    color: #333333;
+    font-size: 15px;
+}
+
+.avatar-avis-date {
+  text-align: center;
+  text-justify: auto;
+  color: #333333;
+  font-family: 'Josefin Sans';
+  font-size: 14px;
+}
+
+.avatar-img {
+  background: #cfbb49;
+  width: 90px;
+  height: 90px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.title-avis {
+    text-align: center;
+}
+
+@media (max-width: 768px) { /*breakpoint*/
+  .container-avis {
+    flex-direction: column;
+  }
+}

@@ -167,3 +167,233 @@ text-decoration: none;
       width: 100%;
     }
   }*/
+
+  /* boutons sur fond couleur */
+
+.container-buttons{
+  background-color: #4f0909;
+  width: 350px;
+  height: 350px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+/* BOUTON FIN 1 - bouton liseré blanc, texte majuscule blanc */
+.button {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+border: 2px #FFFFFF solid;
+padding: 8px 30px;
+border-radius: 30px;
+color: #FFFFFF;
+text-decoration: none;
+}
+/* effet survol */
+.button:hover {
+border: 2px #FFFFFF solid;
+padding: 8px 30px;
+border-radius: 30px;
+background-color: #cfbb49;
+color: #2d2d35;
+text-decoration: none;
+}
+/*fin BOUTON FIN 1 */
+
+/* BOUTON FIN 2 - bouton liseré or, texte majuscule or au survol */
+.buttontwo {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+border: 2px #FFFFFF solid;
+padding: 8px 30px;
+border-radius: 30px;
+color: #FFFFFF;
+text-decoration: none;
+}
+/* effet survol */
+.buttontwo:hover {
+border: 2px #cfbb49 solid;
+padding: 8px 30px;
+border-radius: 30px;
+color: #cfbb49;
+text-decoration: none;
+}
+/*fin BOUTON FIN 2 */
+
+/* BOUTON FIN 3 - bouton liseré or, texte majuscule or */
+.buttonthree {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+border: 2px #cfbb49 solid;
+padding: 8px 30px;
+border-radius: 30px;
+color: #cfbb49;
+text-decoration: none;
+}
+/* effet survol */
+.buttonthree:hover {
+border: 2px #49a5cf solid;
+padding: 8px 30px;
+border-radius: 30px;
+color: #49a5cf;
+text-decoration: none;
+}
+/*fin BOUTON FIN 3 */
+
+/* BOUTON FIN 4 - bouton liseré or, texte majuscule or */
+.buttonfour {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+border: 2px #cfbb49 solid;
+  background-color: #cfbb49;
+padding: 8px 30px;
+border-radius: 30px;
+color: #4f0909;
+text-decoration: none;
+}
+/* effet survol */
+.buttonfour:hover {
+border: 2px #cfbb49 solid;
+  background-color: #cfbb49;
+  opacity: 0.8;
+padding: 8px 30px;
+border-radius: 30px;
+color: #4f0909;
+text-decoration: none;
+}
+/*fin BOUTON FIN 4 */
+
+/* boutons sur fond clair ou blanc */
+
+.container-buttonswhite{
+background-color: #fff;
+width: 350px;
+height: 350px;
+padding-top: 20px;
+padding-left: 20px;
+}
+
+/* BOUTON FIN 1 - bouton liseré rouge, texte majuscule rouge */
+.button {
+font-family: Arial, Helvetica, sans-serif;
+text-transform: uppercase;
+border: 2px #4f0909 solid;
+padding: 8px 30px;
+border-radius: 30px;
+color: #4f0909;
+text-decoration: none;
+}
+/* effet survol */
+.button:hover {
+border: 2px #FFFFFF solid;
+padding: 8px 30px;
+border-radius: 30px;
+background-color: #cfbb49;
+color: #2d2d35;
+text-decoration: none;
+}
+/*fin BOUTON FIN 1 */
+
+/* BOUTON FIN 2 - bouton fond rouge, texte majuscule or au survol */
+.buttontwo {
+font-family: Arial, Helvetica, sans-serif;
+text-transform: uppercase;
+border: 2px #4f0909 solid;
+background-color: #4f0909;
+padding: 8px 30px;
+border-radius: 30px;
+color: #fff;
+text-decoration: none;
+}
+/* effet survol */
+.buttontwo:hover {
+border: 2px #cfbb49 solid;
+padding: 8px 30px;
+border-radius: 30px;
+color: #cfbb49;
+text-decoration: none;
+}
+/*fin BOUTON FIN 2 */
+
+/* BOUTON FIN 3 - bouton liseré or, texte majuscule or */
+.buttonthree {
+font-family: Arial, Helvetica, sans-serif;
+text-transform: uppercase;
+border: 2px #cfbb49 solid;
+padding: 8px 30px;
+border-radius: 30px;
+color: #cfbb49;
+text-decoration: none;
+}
+/* effet survol */
+.buttonthree:hover {
+border: 2px #49a5cf solid;
+padding: 8px 30px;
+border-radius: 30px;
+color: #49a5cf;
+text-decoration: none;
+}
+/*fin BOUTON FIN 3 */
+
+/* BOUTON FIN 4 - bouton liseré or, texte majuscule or */
+.buttonfour {
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 600;
+text-transform: uppercase;
+border: 2px #cfbb49 solid;
+background-color: #cfbb49;
+padding: 8px 30px;
+border-radius: 30px;
+color: #4f0909;
+text-decoration: none;
+}
+/* effet survol */
+.buttonfour:hover {
+border: 2px #cfbb49 solid;
+background-color: #cfbb49;
+opacity: 0.8;
+padding: 8px 30px;
+border-radius: 30px;
+color: #4f0909;
+text-decoration: none;
+}
+/*fin BOUTON FIN 4 */
+
+/**/
+
+.buttonnews {
+border: 2px #FFFFFF solid;
+padding: 8px 30px;
+border-radius: 30px;
+background-color: #2d2d35;
+color: #FFFFFF;
+font-weight: 600;
+text-decoration: none;
+}
+
+.buttonnews:hover {
+border: 2px #FFFFFF solid;
+padding: 8px 30px;
+border-radius: 30px;
+background-color: gold;
+color: #2d2d35;
+text-decoration: none;
+}
+
+.info-box-tan {
+background-color: #ff8661;
+color: #FFFFFF;
+padding: 20px 20px 40px;
+text-align: center;
+}
+
+.info-box-dark {
+background-color: #2D2D35;
+color: #FFFFFF;
+padding: 20px 20px 40px;
+text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
